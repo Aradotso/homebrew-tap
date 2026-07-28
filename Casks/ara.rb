@@ -10,7 +10,6 @@ cask "ara" do
   # Only the Apple silicon build is published so far. Without this, an Intel Mac
   # would download an arm64 app and fail at launch rather than at install.
   depends_on arch: :arm64
-  depends_on macos: ">= :catalina"
 
   app "Ara.app"
 
