@@ -1,6 +1,6 @@
 cask "ara" do
-  version "0.1.0"
-  sha256 "344ed1a7fc933969128dc3ba581a4ae293759d06cfb8e9a3d8ae626e0e409985"
+  version "0.1.1"
+  sha256 "1b51a51c50bc8cf11b5e503838f28e8ea50ea67f163359605aa888dcb9ce8b2b"
 
   url "https://github.com/Aradotso/homebrew-tap/releases/download/desktop-v#{version}/Ara_#{version}_aarch64.dmg"
   name "Ara"
