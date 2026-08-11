@@ -1,25 +1,25 @@
 class Ara < Formula
   desc "Ara Device worker"
   homepage "https://ara.so"
-  version "0.2.37"
+  version "0.2.38"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.37/ara-so-cli-darwin-arm64-0.2.37.tgz"
-      sha256 "d7c16525294588b5e5862f7260f8538e1e5e8b63ea994d435ba14f0e836beb07"
+      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.38/ara-so-cli-darwin-arm64-0.2.38.tgz"
+      sha256 "ff19c31c3b454257d1487fde4f65de3cde1aa803eea3263142f5e78066ebce08"
     else
-      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.37/ara-so-cli-darwin-x64-0.2.37.tgz"
-      sha256 "a044ae8f2b7b8888674a8a09f1f401fca5a0aa9d7f5596c8112eb48ff006c8b0"
+      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.38/ara-so-cli-darwin-x64-0.2.38.tgz"
+      sha256 "8396691efd211d74fb77cec2c11048c1c110445559547e8e2a841b652d241f65"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.37/ara-so-cli-linux-arm64-0.2.37.tgz"
-      sha256 "6fd71d05d1c9e892f37988edbd45716354f544931f71b276b5169db70ab31f2f"
+      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.38/ara-so-cli-linux-arm64-0.2.38.tgz"
+      sha256 "1fafc46655e18d2b4a4123eb0fb08b3708ed51d9d361c2fb4cbc857ff1e3185e"
     else
-      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.37/ara-so-cli-linux-x64-0.2.37.tgz"
-      sha256 "79f5a57e0c75c38027c35e8fd316898f76784783ebc7bfb74691a79ed5ac3065"
+      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.38/ara-so-cli-linux-x64-0.2.38.tgz"
+      sha256 "5446ac0116f82090bfd6b09100f660972c03a71a56e06a7607ad4e22426a29b5"
     end
   end
 
