@@ -1,31 +1,31 @@
 class Ara < Formula
   desc "Ara Device worker"
   homepage "https://ara.so"
-  version "0.2.51"
+  version "0.2.53"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.51/ara-so-cli-darwin-arm64-0.2.51.tgz"
-      sha256 "261abd939e14e317d113e1f1aa9fc9e316d225fb14ad47fc769574cb1bf9f7fb"
+      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.53/ara-so-cli-darwin-arm64-0.2.53.tgz"
+      sha256 "6103bebc835758dd319dcc883e4c4892950c4246993283bb1f2176062404dd4c"
     else
-      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.51/ara-so-cli-darwin-x64-0.2.51.tgz"
-      sha256 "c486e69df32e980021e312278366c0fbb3fce779aa29fd4f9cc695591714b09a"
+      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.53/ara-so-cli-darwin-x64-0.2.53.tgz"
+      sha256 "5d11fbc25f64639eb7c31c969241420d9d46dd65309440ca13bdbfd7f63d0546"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.51/ara-so-cli-linux-arm64-0.2.51.tgz"
-      sha256 "08804763d5c2ba865ff8e822c3c020b058b27c2932a17862a2a1923e3fa0cfdc"
+      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.53/ara-so-cli-linux-arm64-0.2.53.tgz"
+      sha256 "101dec14cffd5299a384947f6c06649102eaf1856c781132401de0e606f03226"
     else
-      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.51/ara-so-cli-linux-x64-0.2.51.tgz"
-      sha256 "f1bf221a8801a78b2b953229a9c3e1d18cd0a281a1783a28270e879ee670c9e7"
+      url "https://github.com/Aradotso/homebrew-tap/releases/download/cli-v0.2.53/ara-so-cli-linux-x64-0.2.53.tgz"
+      sha256 "148eab2e46cde0d94ec3666ac4cd2e05cf54f4aa7a09659248159a68a425aed5"
     end
   end
 
   def install
     if OS.mac?
-      libexec.install "package/bin/ara", "package/bin/libara_device_keychain.dylib"
+      libexec.install "package/bin/ara", "package/bin/libara_device_keychain.dylib", "package/bin/Ara.app"
       bin.install_symlink libexec/"ara"
     else
       bin.install "package/bin/ara"
