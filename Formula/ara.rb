@@ -1,7 +1,6 @@
 class Ara < Formula
-  desc "Ara Device worker"
+  desc "Device worker for Ara"
   homepage "https://ara.so"
-  version "0.2.57"
 
   on_macos do
     if Hardware::CPU.arm?
